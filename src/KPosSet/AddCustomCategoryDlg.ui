@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddCustomCategoryDlg</class>
+ <widget class="QDialog" name="AddCustomCategoryDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>274</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="TitleBarWidget" name="titleWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>46</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>46</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="skinWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#skinWidget{
+background-color: #505050;
+}</string>
+     </property>
+     <widget class="QWidget" name="mainWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>24</y>
+        <width>320</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>180</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>180</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#mainWidget{
+	background-color:#ffffff;
+}</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>76</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>分类名称：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>70</y>
+         <width>76</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>位置：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="positionLineEdit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>70</y>
+         <width>210</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="confirmButton">
+       <property name="geometry">
+        <rect>
+         <x>18</x>
+         <y>120</y>
+         <width>284</width>
+         <height>44</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color:#ffffff;
+font-size:16px;
+border-image: url(:/loginImage/commonButton.png);
+}
+
+QPushButton:pressed{
+border-image: url(:/loginImage/commonButtonPressed.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>确认</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="hintLabel">
+       <property name="geometry">
+        <rect>
+         <x>93</x>
+         <y>50</y>
+         <width>201</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nameLineEdit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>19</y>
+         <width>210</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TitleBarWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">TitleBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

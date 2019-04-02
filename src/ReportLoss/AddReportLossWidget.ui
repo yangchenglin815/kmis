@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddReportLossWidget</class>
+ <widget class="QWidget" name="AddReportLossWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#AddReportLossWidget
+{
+	background-color:#505050;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="785,56">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>9</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="290,404">
+     <property name="spacing">
+      <number>9</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_3" stretch="44,485">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="topWidget" native="true">
+          <property name="styleSheet">
+           <string notr="true">QWidget#topWidget{
+	background-color:#3e3d3d;
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="leftMargin">
+            <number>6</number>
+           </property>
+           <property name="topMargin">
+            <number>6</number>
+           </property>
+           <property name="rightMargin">
+            <number>6</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="SearchEdit" name="searchWidget" native="true"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="AddReportLossSelectWidget" name="listWidget" native="true">
+          <property name="styleSheet">
+           <string notr="true">background-color:#fafafa;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="AllBtnWidget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="111,350,53">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="ReportLossCategoryWidget" name="categoryWidget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>412</width>
+            <height>111</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="ReportLossGoodsWidget" name="goodsWidget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>412</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="buttonWidget" native="true">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>2</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="deleteButton">
+             <property name="minimumSize">
+              <size>
+               <width>91</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font-size:16px;
+	color:#ffffff;
+	border-image: url(:/adjustPrice/blueButton.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/adjustPrice/blueButtonPress.png);
+}
+
+QPushButton:disabled{
+	border-image: url(:/adjustPrice/buttonDisable.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>删除</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="modeifyNoButton">
+             <property name="minimumSize">
+              <size>
+               <width>91</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font-size:16px;
+	color:#ffffff;
+	border-image: url(:/adjustPrice/blueButton.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/adjustPrice/blueButtonPress.png);
+}
+
+QPushButton:disabled{
+	border-image: url(:/adjustPrice/buttonDisable.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>修改数量</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="printButton">
+             <property name="minimumSize">
+              <size>
+               <width>91</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font-size:16px;
+	color:#ffffff;
+	border-image: url(:/adjustPrice/blueButton.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/adjustPrice/blueButtonPress.png);
+}
+
+QPushButton:disabled{
+	border-image: url(:/adjustPrice/buttonDisable.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>打印</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="saveButton">
+             <property name="minimumSize">
+              <size>
+               <width>91</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font-size:16px;
+	color:#ffffff;
+	border-image: url(:/adjustPrice/orangeButton.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/adjustPrice/orangeButtonPress.png);
+}
+
+QPushButton:disabled{
+	border-image: url(:/adjustPrice/buttonDisable.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>保存</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="pageWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>55</width>
+       <height>529</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>135</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="52,52,52,52,265">
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <property name="leftMargin">
+       <number>4</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="categoryFrontButton">
+        <property name="minimumSize">
+         <size>
+          <width>51</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/saleImage/category_up.png);
+}
+
+QPushButton:pressed{
+	
+	border-image: url(:/saleImage/category_up_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="categoryNextButton">
+        <property name="minimumSize">
+         <size>
+          <width>51</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	font-size:12px;
+	color:#ffffff;
+	padding-top:20px;
+	border-image: url(:/saleImage/category_down.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/saleImage/category_down_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="goodsFrontButton">
+        <property name="minimumSize">
+         <size>
+          <width>51</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	border-image: url(:/saleImage/goods_up.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/saleImage/goods_up_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="goodsNextButton">
+        <property name="minimumSize">
+         <size>
+          <width>51</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border:none;
+	font-size:12px;
+	color:#ffffff;
+	padding-top:20px;
+	border-image: url(:/saleImage/goods_down.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/saleImage/goods_down_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>316</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SearchEdit</class>
+   <extends>QWidget</extends>
+   <header>SearchEdit.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AddReportLossSelectWidget</class>
+   <extends>QWidget</extends>
+   <header>addreportlossselectwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReportLossGoodsWidget</class>
+   <extends>QWidget</extends>
+   <header>reportlossgoodswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReportLossCategoryWidget</class>
+   <extends>QWidget</extends>
+   <header>reportlosscategorywidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

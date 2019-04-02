@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SingleDiscountDlg</class>
+ <widget class="QDialog" name="SingleDiscountDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>727</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>727</width>
+    <height>482</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SingleDiscountDlg</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="TitleBarWidget" name="titleWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>727</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget {
+	border-image: url(:/shareImages/dlg_background.png);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_1" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>315</width>
+          <height>430</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>12</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QWidget" name="discountInfoWidget" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>285</width>
+             <height>126</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(237, 237, 237);</string>
+           </property>
+           <widget class="Line" name="line">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>58</y>
+              <width>285</width>
+              <height>2</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>285</width>
+              <height>2</height>
+             </size>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="Line" name="line_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>157</y>
+              <width>410</width>
+              <height>2</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="goodsNameValueLabel">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>8</y>
+              <width>150</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12px bold rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>水蜜桃</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="goodsNameLabel">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>10</y>
+              <width>65</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12px  rgb(51, 51, 51);
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>商品名称：</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="barCodeLabel">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>30</y>
+              <width>61</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12px bold rgb(51, 51, 51);
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>条码信息：</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="barCodeValueLabel">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>30</y>
+              <width>150</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12px bold rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>235254478</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="originalAmtLabel">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>68</y>
+              <width>52</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>原单价：</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="originalAmtValueLabel">
+            <property name="geometry">
+             <rect>
+              <x>125</x>
+              <y>68</y>
+              <width>140</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 22px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>￥12.00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="discountValueLabel">
+            <property name="geometry">
+             <rect>
+              <x>125</x>
+              <y>96</y>
+              <width>140</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 22px;
+color: rgb(234, 136, 82);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>9折</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="discountLabel">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>96</y>
+              <width>39</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>折扣：</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QWidget" name="widget_3" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>285</width>
+             <height>285</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <widget class="QLabel" name="rediscountLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>18</y>
+              <width>61</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>现折扣：</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="nowAmtLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>69</y>
+              <width>61</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>现金额：</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="rediscountEdit">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>18</y>
+              <width>185</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="nowAmtEdit">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>69</y>
+              <width>185</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="transAmtLabel">
+            <property name="geometry">
+             <rect>
+              <x>26</x>
+              <y>130</y>
+              <width>81</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>成交单价：</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="disAmtLabel">
+            <property name="geometry">
+             <rect>
+              <x>26</x>
+              <y>160</y>
+              <width>81</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14px;
+color: rgb(51, 51, 51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>优惠金额：</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="transAmtValueLabel">
+            <property name="geometry">
+             <rect>
+              <x>125</x>
+              <y>130</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 22px;
+color: rgb(234, 136, 82);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>￥27.02</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="disAmtValueLabel">
+            <property name="geometry">
+             <rect>
+              <x>125</x>
+              <y>160</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 16px;
+color: rgb(51，51，51);
+font: bold;
+font-family: &quot;微软雅黑&quot;;</string>
+            </property>
+            <property name="text">
+             <string>￥27.02</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="disCommitBtn">
+            <property name="geometry">
+             <rect>
+              <x>18</x>
+              <y>220</y>
+              <width>251</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#disCommitBtn {
+	font:16px;
+	color: rgb(255, 255, 255);
+	font-family:&quot;微软雅黑&quot;;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#disCommitBtn:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}</string>
+            </property>
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>120</y>
+              <width>281</width>
+              <height>2</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>50</y>
+              <width>185</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(250, 122, 122);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>13</number>
+         </property>
+         <property name="bottomMargin">
+          <number>130</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="twentyButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>76</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#factorBtn{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#factorBtn:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+               </property>
+               <property name="text">
+                <string>￥20</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="fiftyButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>76</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#fiftyBtn{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#fiftyBtn:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+               </property>
+               <property name="text">
+                <string>￥50</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="hundredButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>76</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#hundredBtn{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#hundredBtn:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+               </property>
+               <property name="text">
+                <string>￥100</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="twoHundredButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>76</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#twoHundredBtn{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#twoHundredBtn:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+               </property>
+               <property name="text">
+                <string>￥200</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="WndDigitalKeyboard" name="DigitalKeyWnd" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>303</width>
+               <height>303</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WndDigitalKeyboard</class>
+   <extends>QWidget</extends>
+   <header location="global">WndDigitalKeyboard.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TitleBarWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">TitleBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

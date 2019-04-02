@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VirtualPaysWidget</class>
+ <widget class="QWidget" name="VirtualPaysWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>285</width>
+    <height>235</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="virtualWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>144</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#virtualWidget {
+	background-color: rgb(250, 250, 250);
+}</string>
+     </property>
+     <widget class="QPushButton" name="virtualPay_01">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>9</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>实体卡</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_02">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>9</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>银联卡</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_03">
+      <property name="geometry">
+       <rect>
+        <x>192</x>
+        <y>9</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>果麦</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_04">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>52</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>支票</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_05">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>52</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>欠单</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_06">
+      <property name="geometry">
+       <rect>
+        <x>192</x>
+        <y>52</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>市民卡</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_09">
+      <property name="geometry">
+       <rect>
+        <x>192</x>
+        <y>95</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_08">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>95</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="virtualPay_07">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>95</y>
+        <width>78</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>78</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>其他</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>91</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_2 { 
+	background-color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <widget class="QLabel" name="factAmtVirtualLabel">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>5</y>
+        <width>72</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#factAmtJdLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+      </property>
+      <property name="text">
+       <string>实收金额：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="confirmButton">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>40</y>
+        <width>245</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>结算</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="factAmtVirtualEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>5</y>
+        <width>168</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

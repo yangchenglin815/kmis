@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KeySetPage</class>
+ <widget class="QWidget" name="KeySetPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="skinWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#skinWidget{
+	background-color:#ffffff;
+}</string>
+     </property>
+     <widget class="QLabel" name="homeKeyLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>13</y>
+        <width>77</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>首页按键：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="refundKeySortButton">
+      <property name="geometry">
+       <rect>
+        <x>467</x>
+        <y>329</y>
+        <width>128</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#refundKeySortButton {
+	color: rgb(255, 255, 255);
+	border-image: url(:/setImage/sort_normal.png);
+}
+
+QPushButton#refundKeySortButton:pressed {
+	border-image: url(:/setImage/sort_press.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>退款按键位置排序</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="homeOtherButton">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>13</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border-image: url(:/setImage/key_btn_disable.png);</string>
+      </property>
+      <property name="text">
+       <string>1 其他</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="homeKeySortButton">
+      <property name="geometry">
+       <rect>
+        <x>467</x>
+        <y>201</y>
+        <width>128</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#homeKeySortButton {
+	color: rgb(255, 255, 255);
+	border-image: url(:/setImage/sort_normal.png);
+}
+
+QPushButton#homeKeySortButton:pressed {
+	border-image: url(:/setImage/sort_press.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>首页按键位置排序</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>242</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/setImage/key_btn_disable.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="refundKeyLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>242</y>
+        <width>77</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>退款按键：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey1Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>13</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey2Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>293</x>
+        <y>13</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey3Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>401</x>
+        <y>13</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey4Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>509</x>
+        <y>13</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey5Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>78</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey6Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>78</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey7Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>293</x>
+        <y>78</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey8Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>401</x>
+        <y>78</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey9Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>509</x>
+        <y>78</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey10Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>143</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey11Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>143</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey12Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>293</x>
+        <y>143</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="refundKey1Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>293</x>
+        <y>242</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="refundKey2Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>401</x>
+        <y>242</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="refundKey3Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>509</x>
+        <y>242</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PressKeyWidget" name="homeKey13Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>143</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>242</y>
+        <width>86</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/setImage/key_btn_disable.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PressKeyWidget</class>
+   <extends>QWidget</extends>
+   <header>PressKeyWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

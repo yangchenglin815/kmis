@@ -1,0 +1,16 @@
+<?xml version = '1.0'?>
+<KPosUIXML>
+	<baseInfo sreenWidth="800" screenHeight="600"/>
+	<SaleWidget>
+		<TopTitle height="51"/>
+		<mainBody topSpace="9" bottomSpace="11" leftSpace="18" rightSpace="18">
+			<leftWidget width="288">
+					<topWidget height="44"/>
+					<goodsSellListWidget titleHeight="34" bottomHeight="41"/>
+					<bottomWidget height="140"/>
+			</leftWidget>
+			<middleWidget width="406"/>
+			<rightWidget width="58"/>
+		</mainBody>
+	</SaleWidget>
+</KPosUIXML>

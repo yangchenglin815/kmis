@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomePageWidget</class>
+ <widget class="QWidget" name="HomePageWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HomePageWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="titleWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#titleWidget{
+	background-color: rgb(81, 80, 80);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>1101</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="minimizeButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>34</width>
+          <height>34</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#minimizeButton {
+	border-image: url(:/shareImages/minimize.png);
+}
+
+QPushButton#minimizeButton:pressed {
+	border-image: url(:/shareImages/minimize_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>67</width>
+          <height>34</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#closeButton {
+	font: 14pt &quot;微软雅黑&quot;;
+	border-radius:8px;
+	background:qlineargradient(spread:pad, x1:0.54, y1:1, x2:0.506, y2:0, stop:0 rgba(28, 28, 28, 255), stop:1 rgba(84, 84, 84, 255));
+	color:rgb(255, 255, 255);
+	border:1px solid black;
+}
+
+QPushButton#closeButton:pressed {
+	background:qlineargradient(spread:pad, x1:0.54, y1:1, 	x2:0.506, y2:0, stop:0 rgba(84, 84, 84,  255), stop:1 rgba(28, 28, 28,255));
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>注销</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="mainWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#mainWidget{
+	background-color: rgb(81, 80, 80);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="244,142,142">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QPushButton" name="saleButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border-image: url(:/homeWidgetImage/sale.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/sale_press.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+            <item>
+             <widget class="QPushButton" name="adjustPriceButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border-image: url(:/homeWidgetImage/adjustPrice.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/adjust_press.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/adjust_disable.png);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="saleDetialButton">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>115</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border-image: url(:/homeWidgetImage/xsmx_h.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/xsmx_p.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/xsmx_n.png);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QPushButton" name="accountManageButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {	
+	border-image: url(:/homeWidgetImage/accountManage.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/accountManage_press.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/accountManage_disable.png);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="modifyPasswdButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {			
+	border-image: url(:/homeWidgetImage/modifyPassword.png);
+}
+
+QPushButton:pressed {	
+	border-image: url(:/homeWidgetImage/modifyPassword_press.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/modifyPassword_disable.png);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1,1,1">
+        <item>
+         <widget class="QPushButton" name="reportButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border-image: url(:/homeWidgetImage/reportForms.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/reportForms_press.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/reportForms_disable.png);
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="orderGoodsButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border-image: url(:/homeWidgetImage/orderGoods.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/orderGoods_press.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/orderGoods_disable.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stockingButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {			
+	border-image: url(:/homeWidgetImage/stocking.png);
+}
+
+QPushButton:pressed {	
+	border-image: url(:/homeWidgetImage/stocking_press.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/stocking_disable.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="reportLossButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>139</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {			
+	border-image: url(:/homeWidgetImage/bs_h.png);
+}
+
+QPushButton:pressed {	
+	border-image: url(:/homeWidgetImage/bs_p.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/bs_n.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="inStockButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {	
+	border-image: url(:/homeWidgetImage/rk-h.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/rk-p.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/rk-n.png);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="outStockButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {	
+	border-image: url(:/homeWidgetImage/ck-h.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/homeWidgetImage/ck-p.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/ck-n.png);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="goodsManageButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>136</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {			
+	border-image: url(:/homeWidgetImage/spgl_h.png);
+}
+
+QPushButton:pressed {	
+	border-image: url(:/homeWidgetImage/spgl_p.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/spgl_n.png);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="barCodeScaleButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {	
+	border-image: url(:/homeWidgetImage/tmcgl_h.png);
+}
+
+QPushButton:pressed {	
+	border-image: url(:/homeWidgetImage/tmcgl_p.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/tmcgl_n.png);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="setButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {		
+	border-image: url(:/homeWidgetImage/set.png);
+}
+
+QPushButton:pressed {	
+	border-image: url(:/homeWidgetImage/set_press.png);
+}
+
+QPushButton:disabled {
+	border-image: url(:/homeWidgetImage/set_disable.png);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

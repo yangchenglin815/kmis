@@ -1,0 +1,2952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MemberDlg</class>
+ <widget class="QDialog" name="MemberDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>726</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>726</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MemberDlg</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#MemberDlg {
+	border-image: url(:/shareImages/dlg_background.png);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" colspan="3">
+    <widget class="TitleBarWidget" name="titleWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>314</width>
+       <height>560</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>458</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>15</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>15</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="memRegisterButton">
+        <property name="minimumSize">
+         <size>
+          <width>71</width>
+          <height>33</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/member/tab.png);</string>
+        </property>
+        <property name="text">
+         <string>会员注册</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" colspan="2">
+       <widget class="QPushButton" name="modifyPasswdButton">
+        <property name="minimumSize">
+         <size>
+          <width>71</width>
+          <height>33</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/member/tab.png);</string>
+        </property>
+        <property name="text">
+         <string>密码修改</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="memQueryButton">
+        <property name="minimumSize">
+         <size>
+          <width>71</width>
+          <height>33</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/member/tab.png);</string>
+        </property>
+        <property name="text">
+         <string>会员查询</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="memRechargeButton">
+        <property name="minimumSize">
+         <size>
+          <width>71</width>
+          <height>33</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/member/tab.png);</string>
+        </property>
+        <property name="text">
+         <string>会员充值</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="5">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="minimumSize">
+         <size>
+          <width>282</width>
+          <height>506</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#replaceCardWidget {
+	background-color: rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="memQueryWidget">
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>282</width>
+            <height>94</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>282</width>
+            <height>94</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget#widget_4 {
+	background-color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <widget class="QLabel" name="warningLabel">
+           <property name="geometry">
+            <rect>
+             <x>16</x>
+             <y>60</y>
+             <width>250</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>14</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(249, 79, 79);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="cardIDQueryEdit">
+           <property name="geometry">
+            <rect>
+             <x>16</x>
+             <y>30</y>
+             <width>250</width>
+             <height>33</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+padding-left:10px;
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>请输入卡号或手机号</string>
+           </property>
+          </widget>
+          <zorder>cardIDQueryEdit</zorder>
+          <zorder>warningLabel</zorder>
+         </widget>
+         <widget class="QWidget" name="widget_5" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>282</width>
+            <height>228</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>282</width>
+            <height>228</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(250, 250, 250);</string>
+          </property>
+          <widget class="QLabel" name="birthdayQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>157</y>
+             <width>80</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>生日：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sexQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>74</y>
+             <width>80</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>性别：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="birthdayValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>157</y>
+             <width>175</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="nameQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>42</y>
+             <width>80</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>姓名：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="sexValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>74</y>
+             <width>175</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="nameValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>42</y>
+             <width>175</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font:bold;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cardIDQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>20</y>
+             <width>80</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>卡号：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cardIDValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>121</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>2266654455</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="iphoneValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>103</y>
+             <width>175</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="phoneQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>103</y>
+             <width>80</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>手机号：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="payPwdQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>130</y>
+             <width>80</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>支付密码：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="payPwdValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>130</y>
+             <width>175</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="memGradeQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>180</y>
+             <width>80</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>会员等级：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="memGradeValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>180</y>
+             <width>175</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font:bold;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_6" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>318</y>
+            <width>282</width>
+            <height>84</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>282</width>
+            <height>84</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(250, 250, 250);</string>
+          </property>
+          <widget class="QLabel" name="balanceQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>10</y>
+             <width>60</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>余额：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="integValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>43</y>
+             <width>175</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font:bold;
+color: rgb(243, 133, 72);
+font-family:&quot;微软雅黑&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="balanceValueQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>10</y>
+             <width>175</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:18px;
+font:bold;
+color: rgb(243, 133, 72);
+font-family:&quot;微软雅黑&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="integQueryLabel">
+           <property name="geometry">
+            <rect>
+             <x>3</x>
+             <y>43</y>
+             <width>60</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>积分：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </widget>
+         <widget class="Line" name="line_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>317</y>
+            <width>282</width>
+            <height>2</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>282</width>
+            <height>2</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>2</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">Line#line_2 {
+	border-color: rgb(237, 237, 237);
+}</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QWidget" name="widget_7" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>400</y>
+            <width>282</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>282</width>
+            <height>68</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget#widget_7 {
+	background-color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <widget class="QPushButton" name="memConsumeQueryButton">
+           <property name="geometry">
+            <rect>
+             <x>17</x>
+             <y>38</y>
+             <width>251</width>
+             <height>43</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>79</width>
+             <height>43</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#memConsumeQueryButton {
+	font:16px;
+	color: rgb(255, 255, 255);
+	font-family:&quot;微软雅黑&quot;;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#memConsumeQueryButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>会员消费</string>
+           </property>
+          </widget>
+         </widget>
+         <zorder>widget_5</zorder>
+         <zorder>widget_4</zorder>
+         <zorder>widget_6</zorder>
+         <zorder>line_2</zorder>
+         <zorder>widget_7</zorder>
+        </widget>
+        <widget class="QWidget" name="memRechargeWidget">
+         <widget class="QWidget" name="widget_9" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>284</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(250, 250, 250);</string>
+          </property>
+          <widget class="QLabel" name="CardIDValueRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>15</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>13685695462</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="phoneValueRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>40</y>
+             <width>101</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>13685695462</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="memNameRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>15</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>姓名：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="phoneRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>50</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>电话：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="memNameValueRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>15</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font:bold;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>信息女士</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="CardIDRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>15</y>
+             <width>50</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>卡号：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </widget>
+         <widget class="Line" name="line_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>70</y>
+            <width>291</width>
+            <height>2</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>2</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>2</height>
+           </size>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QWidget" name="widget_10" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>71</y>
+            <width>284</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(250, 250, 250);</string>
+          </property>
+          <widget class="QLabel" name="balanceRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>7</y>
+             <width>50</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>余额：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="balanceValueRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>7</y>
+             <width>128</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:18px;
+font:bold;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(238, 136, 82);</string>
+           </property>
+           <property name="text">
+            <string>￥150.00</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="integRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>35</y>
+             <width>50</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>积分：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="integValueRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>35</y>
+             <width>128</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font:bold;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(238, 136, 82);</string>
+           </property>
+           <property name="text">
+            <string>20</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_11" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>140</y>
+            <width>284</width>
+            <height>331</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget#widget_11 {
+	background-color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <widget class="QLabel" name="amtChargeRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>12</y>
+             <width>91</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>* 充值金额：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="payTypeRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>94</y>
+             <width>91</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>支付方式：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="PayMethodButton" name="payRecButton_02">
+           <property name="geometry">
+            <rect>
+             <x>185</x>
+             <y>94</y>
+             <width>80</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>34</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="PayMethodButton" name="payRecButton_05">
+           <property name="geometry">
+            <rect>
+             <x>96</x>
+             <y>172</y>
+             <width>80</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>34</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="PayMethodButton" name="payRecButton_06">
+           <property name="geometry">
+            <rect>
+             <x>185</x>
+             <y>172</y>
+             <width>80</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>34</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="PayMethodButton" name="payRecButton_04">
+           <property name="geometry">
+            <rect>
+             <x>185</x>
+             <y>133</y>
+             <width>80</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>34</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="amtChargeRecEdit">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>12</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>168</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+padding-left:10px;</string>
+           </property>
+          </widget>
+          <widget class="PayMethodButton" name="payRecButton_03">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>133</y>
+             <width>80</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>34</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="operatorRecBox">
+           <property name="geometry">
+            <rect>
+             <x>96</x>
+             <y>216</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>168</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+           <property name="duplicatesEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="giftAmtRecEdit">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>53</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>168</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+padding-left:10px;</string>
+           </property>
+          </widget>
+          <widget class="PayMethodButton" name="payRecButton_01">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>94</y>
+             <width>80</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>34</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="operatorRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>216</y>
+             <width>91</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>  业务员：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="giftAmtRecLabel">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>53</y>
+             <width>91</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+           </property>
+           <property name="text">
+            <string>赠送金额：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="rechargeConfireButton">
+           <property name="geometry">
+            <rect>
+             <x>15</x>
+             <y>263</y>
+             <width>255</width>
+             <height>44</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>255</width>
+             <height>44</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#rechargeConfireButton {
+	color: rgb(255, 255, 255);
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#rechargeConfireButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>确认充值</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="memRegisterWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>396</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>396</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget#memRegisterWidget {
+	background-color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <widget class="QLabel" name="payPasswdRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>170</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="text">
+           <string>支付密码：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="text">
+           <string>姓名：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="operatorRegBox">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>250</y>
+            <width>168</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="phoneRegEdit">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>130</y>
+            <width>168</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+padding-left:10px;</string>
+          </property>
+          <property name="maxLength">
+           <number>11</number>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="commitRegButton">
+          <property name="geometry">
+           <rect>
+            <x>13</x>
+            <y>340</y>
+            <width>255</width>
+            <height>44</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>255</width>
+            <height>44</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#commitRegButton {
+	font:14px;
+	color: rgb(255, 255, 255);
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#commitRegButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}</string>
+          </property>
+          <property name="text">
+           <string>提交</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="operatorRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>250</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="text">
+           <string>业务员：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="sexRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>54</y>
+            <width>81</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="text">
+           <string>性别：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="payPasswdRegEdit">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>170</y>
+            <width>168</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+padding-left:10px;</string>
+          </property>
+          <property name="maxLength">
+           <number>6</number>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="phoneRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>130</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="text">
+           <string>* 手机号：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="memGradeRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>210</y>
+            <width>100</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="text">
+           <string>* 会员等级：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="memGradeRegBox">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>210</y>
+            <width>168</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>普通会员</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>黄金会员</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>钻石会员</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="manBtn">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>57</y>
+            <width>24</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/member/man_normal.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="womanBtn">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>57</y>
+            <width>24</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/member/woman_normal.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="warningRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>320</y>
+            <width>255</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(249, 79, 79);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="DateLineEdit" name="birthdayRegEdit">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>90</y>
+            <width>168</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+padding-left:10px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="birthdayRegLabel">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>90</y>
+            <width>91</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>-1</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font:14px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);</string>
+          </property>
+          <property name="text">
+           <string>生日：</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="SearchEdit" name="nameWidget" native="true">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>20</y>
+            <width>168</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="modifyPasswdWidget">
+         <widget class="QWidget" name="widget_12" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>284</width>
+            <height>290</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget#widget_12 {
+	background-color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <widget class="QLabel" name="newPasswdPwdLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>94</y>
+             <width>80</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>新密码：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="confirmNewPasswdPwdLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>133</y>
+             <width>80</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>确认新密码：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="newPasswdPwdEdit">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>94</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>168</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">padding-left:10px;</string>
+           </property>
+           <property name="maxLength">
+            <number>6</number>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="commitPwdButton">
+           <property name="geometry">
+            <rect>
+             <x>12</x>
+             <y>230</y>
+             <width>255</width>
+             <height>44</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>255</width>
+             <height>44</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#commitPwdButton {
+	color: rgb(255, 255, 255);
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#commitPwdButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>提交</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="oldPasswdPwdLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>55</y>
+             <width>80</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>原密码：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cardIDPwdLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>16</y>
+             <width>80</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>卡号：</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="oldPasswdPwdEdit">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>55</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>168</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">padding-left:10px;</string>
+           </property>
+           <property name="maxLength">
+            <number>6</number>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="confirmNewpasswdPwdEdit">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>133</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>168</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">padding-left:10px;</string>
+           </property>
+           <property name="maxLength">
+            <number>6</number>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="pwdModifyWarningLabel">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>164</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font:12px;
+font-family:&quot;微软雅黑&quot;;
+color: rgb(249, 79, 79);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cardIDValuePwdLabel">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>16</y>
+             <width>168</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="ReplaceCardWidget" name="replaceCardWidget"/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="Line" name="line">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>2</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>2</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(102, 102, 102);</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>412</width>
+       <height>526</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>44</number>
+      </property>
+      <property name="rightMargin">
+       <number>15</number>
+      </property>
+      <property name="bottomMargin">
+       <number>193</number>
+      </property>
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="hundredButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#hundredButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#hundredButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>￥100</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="twoHundredButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#twoHundredButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#twoHundredButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>￥200</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="threeHundredButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#threeHundredButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#threeHundredButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>￥300</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="fiveHundredButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#fiveHundredButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#fiveHundredButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>￥500</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="4">
+       <widget class="WndDigitalKeyboard" name="DigitalKeyWnd" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>303</width>
+          <height>303</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WndDigitalKeyboard</class>
+   <extends>QWidget</extends>
+   <header location="global">WndDigitalKeyboard.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TitleBarWidget</class>
+   <extends>QWidget</extends>
+   <header>TitleBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SearchEdit</class>
+   <extends>QWidget</extends>
+   <header>SearchEdit.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PayMethodButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">PayMethodButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ReplaceCardWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">ReplaceCardWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DateLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">DateLineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>cardIDQueryEdit</tabstop>
+  <tabstop>amtChargeRecEdit</tabstop>
+  <tabstop>giftAmtRecEdit</tabstop>
+  <tabstop>operatorRecBox</tabstop>
+  <tabstop>phoneRegEdit</tabstop>
+  <tabstop>payPasswdRegEdit</tabstop>
+  <tabstop>operatorRegBox</tabstop>
+  <tabstop>oldPasswdPwdEdit</tabstop>
+  <tabstop>newPasswdPwdEdit</tabstop>
+  <tabstop>confirmNewpasswdPwdEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

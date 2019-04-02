@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScreenSetPage</class>
+ <widget class="QWidget" name="ScreenSetPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="skinWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#skinWidget{
+	background-color:#ffffff;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>18</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="topWidget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>111</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>111</height>
+         </size>
+        </property>
+        <widget class="QLabel" name="printerModelLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>打印机型号：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="isPrintLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>32</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>是否打印：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="numberScreenRButton">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>72</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(51, 51, 51);</string>
+         </property>
+         <property name="text">
+          <string> 数字客显</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="colorScreenRButton">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>72</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(51, 51, 51);</string>
+         </property>
+         <property name="text">
+          <string> 彩屏客显</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="printerTestButton">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>0</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image: url(:/kPosSetImage/buttonNormal.png);
+color:#ffffff;
+}
+
+QPushButton:pressed{
+border-image: url(:/kPosSetImage/buttonPressed.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>测试</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>72</y>
+           <width>571</width>
+           <height>1</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>1</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>1</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #ededed;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="noPrintButton">
+         <property name="geometry">
+          <rect>
+           <x>194</x>
+           <y>32</y>
+           <width>51</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>否</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="noScreenRButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>72</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(51, 51, 51);</string>
+         </property>
+         <property name="text">
+          <string> 无客显设备</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="customerDisplayTypeLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>72</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>客显类型：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="englishScreenRButton">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>72</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(51, 51, 51);</string>
+         </property>
+         <property name="text">
+          <string> 英文客显</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="chineseScreenRButton">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>72</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(51, 51, 51);</string>
+         </property>
+         <property name="text">
+          <string> 中文客显</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="yesPrintButton">
+         <property name="geometry">
+          <rect>
+           <x>134</x>
+           <y>32</y>
+           <width>51</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>是</string>
+         </property>
+        </widget>
+        <widget class="KPosComboBox" name="painterModelComBox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>0</y>
+           <width>190</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="middleWidget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>120</height>
+         </size>
+        </property>
+        <widget class="QPushButton" name="addADButton">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>40</y>
+           <width>63</width>
+           <height>63</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image: url(:/kPosSetImage/addAD.png);
+}
+
+QPushButton:pressed{
+border-image: url(:/kPosSetImage/addADPressed.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="localUploadLabel">
+         <property name="geometry">
+          <rect>
+           <x>333</x>
+           <y>0</y>
+           <width>71</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>本地上传：</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>253</x>
+           <y>60</y>
+           <width>15</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-image: url(:/kPosSetImage/right.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/kPosSetImage/right_press.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="geometry">
+          <rect>
+           <x>333</x>
+           <y>40</y>
+           <width>63</width>
+           <height>63</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="geometry">
+          <rect>
+           <x>403</x>
+           <y>40</y>
+           <width>63</width>
+           <height>63</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>43</x>
+           <y>40</y>
+           <width>63</width>
+           <height>63</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>113</x>
+           <y>40</y>
+           <width>63</width>
+           <height>63</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>473</x>
+           <y>60</y>
+           <width>15</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-image: url(:/kPosSetImage/right.png);
+}
+
+QPushButton:pressed{
+	border-image: url(:/kPosSetImage/right_press.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="headquartersUploadLabel">
+         <property name="geometry">
+          <rect>
+           <x>43</x>
+           <y>0</y>
+           <width>71</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>总部上传：</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="geometry">
+          <rect>
+           <x>183</x>
+           <y>40</y>
+           <width>63</width>
+           <height>63</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="bottomWidget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>261</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>261</height>
+         </size>
+        </property>
+        <widget class="QLabel" name="eleScalePortLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>220</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>电子秤端口：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="customerModelLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>客显型号：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>170</y>
+           <width>571</width>
+           <height>1</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>1</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>1</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #ededed;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="KPosComboBox" name="clientScreenModelComBox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>0</y>
+           <width>272</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="KPosComboBox" name="clientScreenPortComBox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>50</y>
+           <width>190</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="cardReaderPortLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>130</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>读卡器端口：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="cardReaderTestButton">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>130</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image: url(:/kPosSetImage/buttonNormal.png);
+color:#ffffff;
+}
+
+QPushButton:pressed{
+border-image: url(:/kPosSetImage/buttonPressed.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>测试</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="cardReaderModelLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>读卡器型号：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="KPosComboBox" name="eBalancePortComboBox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>220</y>
+           <width>272</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="customerPortLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>50</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>客显端口：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="clientScreenPortTestButton">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>50</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image: url(:/kPosSetImage/buttonNormal.png);
+color:#ffffff;
+}
+
+QPushButton:pressed{
+border-image: url(:/kPosSetImage/buttonPressed.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>测试</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="eleScaleModelLabel">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>180</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>电子秤型号：</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="KPosComboBox" name="cardReaderModelComBox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>90</y>
+           <width>272</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="KPosComboBox" name="cardReaderPortComboBox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>130</y>
+           <width>190</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="KPosComboBox" name="eBalanceModelComboBox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>180</y>
+           <width>272</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KPosComboBox</class>
+   <extends>QWidget</extends>
+   <header>KPosComboBox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatementDlg</class>
+ <widget class="QDialog" name="StatementDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>728</width>
+    <height>544</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>727</width>
+    <height>543</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>StatementDlg</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>728</width>
+     <height>504</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>504</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>504</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget {
+	border-image: url(:/shareImages/dlg_background.png);
+}</string>
+   </property>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>314</width>
+      <height>504</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>314</width>
+      <height>504</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>314</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <widget class="StatementMethodButton" name="payMethodBtn_1">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>14</y>
+       <width>55</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>55</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>现金</string>
+     </property>
+    </widget>
+    <widget class="StatementMethodButton" name="payMethodBtn_4">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>14</y>
+       <width>55</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>55</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>支付宝</string>
+     </property>
+    </widget>
+    <widget class="StatementMethodButton" name="payMethodBtn_5">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>14</y>
+       <width>55</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>55</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="StatementMethodButton" name="payMethodBtn_3">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>14</y>
+       <width>55</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>55</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>储值卡</string>
+     </property>
+    </widget>
+    <widget class="StatementMethodButton" name="payMethodBtn_2">
+     <property name="geometry">
+      <rect>
+       <x>71</x>
+       <y>14</y>
+       <width>55</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>55</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>会员卡</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>47</y>
+       <width>285</width>
+       <height>212</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>212</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_4 {
+	background-color: rgb(250, 250, 250);
+}</string>
+     </property>
+     <widget class="Line" name="id_line_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>83</y>
+        <width>285</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>285</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid #ededed;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="discountLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(51, 51, 51);
+font-size:12px;
+font-family:&quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>折扣：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="simpleAmtLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>86</y>
+        <width>100</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+font-size:14px;</string>
+      </property>
+      <property name="text">
+       <string>整单金额：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="samllChangeButton">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>10</y>
+        <width>115</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>115</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#samllChangeButton {
+	font-size:12px;
+	color: rgb(255, 255, 255);
+	border-image: url(:/statementImage/samll_change_normal.png);
+}
+
+QPushButton#samllChangeButton:pressed {
+	border-image: url(:/statementImage/samll_change_press.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>抹零</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="simpleAmtValueLabel">
+      <property name="geometry">
+       <rect>
+        <x>129</x>
+        <y>86</y>
+        <width>137</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(51, 51, 51);
+font: bold;
+font-size:18px;
+font-family:&quot;微软雅黑&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>￥37.02</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amtPaidValueLabel">
+      <property name="geometry">
+       <rect>
+        <x>129</x>
+        <y>120</y>
+        <width>137</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(51, 51, 51);
+font-size:18px;
+font: bold;
+font-family:&quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>￥10.00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="discountValueLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(51, 51, 51);
+font-size:12px;
+font: bold;
+font-family:&quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>9折</string>
+      </property>
+     </widget>
+     <widget class="Line" name="id_line_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>45</y>
+        <width>285</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>285</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid #ededed;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="disAmtLabel">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>71</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(51, 51, 51);
+font-size:12px;
+font-family:&quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>优惠金额：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="disAmtValueLabel">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>50</y>
+        <width>54</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(51, 51, 51);
+font-size:12px;
+font: bold;
+font-family:&quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>￥3.70</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="paymentDetailButton">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>10</y>
+        <width>115</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>115</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#paymentDetailButton {
+	font-size:12px;
+	color: rgb(153, 153, 153);
+	border-image: url(:/statementImage/pay_details_normal.png);
+}
+
+QPushButton#paymentDetailButton:pressed {
+	border-image: url(:/statementImage/pay_details_press.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>支付详情(0/0)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amtPaidLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>100</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+font-size:14px;</string>
+      </property>
+      <property name="text">
+       <string>已付金额：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="receivedValueLabel">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>166</y>
+        <width>137</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(234, 136, 82);
+font-size:22px;
+font: bold;
+font-family:&quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>￥27.02</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="amtReceivedLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>166</y>
+        <width>100</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family:&quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+font-size:14px;</string>
+      </property>
+      <property name="text">
+       <string>待收金额：</string>
+      </property>
+     </widget>
+     <widget class="Line" name="id_line_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>285</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid #ededed;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>261</y>
+       <width>285</width>
+       <height>230</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>129</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#storeCardWidget {
+	background-color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="cashWidget">
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>129</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>129</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#widget_3 {
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QPushButton" name="statementButton">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>73</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtCashLabel">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>21</y>
+          <width>72</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtCashLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+	font-family:&quot;微软雅黑&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>实收金额：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="factAmtCashEdit">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>21</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="memCardWidget">
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(250, 250, 250)
+</string>
+       </property>
+       <widget class="Line" name="line_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>36</y>
+          <width>285</width>
+          <height>2</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>2</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>2</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">Line#line_2 {
+	border-color: rgb(237, 237, 237);
+}</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="id_lab_integ_value">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>37</y>
+          <width>31</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:12px;
+color:rgb(51, 51, 51)</string>
+        </property>
+        <property name="text">
+         <string>20</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="id_lab_integ">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>37</y>
+          <width>31</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#id_lab_integ {
+	font-size:12px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>积分：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="id_lab_can_arrived_value">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>37</y>
+          <width>61</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#id_lab_can_arrived_value {
+	font-size:12px;
+	color: rgb(244, 132, 69);
+}</string>
+        </property>
+        <property name="text">
+         <string>￥0.20</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="id_lab_mem_card">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>91</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#id_lab_mem_card {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>会员卡余额:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="id_lab_mem_card_value">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>0</y>
+          <width>101</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#id_lab_mem_card_value {
+	font-size:18px;
+	color: rgb(244, 132, 69);
+}</string>
+        </property>
+        <property name="text">
+         <string>￥50.00</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="id_lab_can_arrived">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>37</y>
+          <width>71</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:12px;
+color: rgb(51, 51, 51);</string>
+        </property>
+        <property name="text">
+         <string>可抵现：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_6" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>71</y>
+         <width>285</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <widget class="QLabel" name="arrivedMemLabel">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>56</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#arrivedMemLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>抵现：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="balanceMemLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>15</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#balanceMemLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>余额使用：</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="statementMemButton">
+        <property name="geometry">
+         <rect>
+          <x>23</x>
+          <y>100</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>245</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementMemButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementMemButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="arrivedValueLabel">
+        <property name="geometry">
+         <rect>
+          <x>215</x>
+          <y>56</y>
+          <width>50</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="integUseMemLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>56</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#integUseMemLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>积分使用：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="balanceMemEdit">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>15</y>
+          <width>178</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="integUseMemEdit">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>56</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="memWarningLabel">
+        <property name="geometry">
+         <rect>
+          <x>23</x>
+          <y>90</y>
+          <width>245</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(250, 122, 122);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="storeCardWidget">
+      <widget class="QLabel" name="warningStoreLabel">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>0</y>
+         <width>161</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family:&quot;微软雅黑&quot;;
+font-size:10px;
+color: rgb(250, 122, 122);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="statementStoreButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>175</y>
+         <width>261</width>
+         <height>42</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>118</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#statementStoreButton {
+	color: rgb(255, 255, 255);
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementStoreButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>结算</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cardIDStoreLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:14px;
+color: rgb(51, 51, 51);
+font-family:&quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>卡号：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="useAmtStoreEdit">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>137</y>
+         <width>168</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>168</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family:&quot;微软雅黑&quot;;
+font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cardIDStoreEdit">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>168</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>168</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family:&quot;微软雅黑&quot;;
+font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>请扫码</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="useAmtStoreLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>137</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family:&quot;微软雅黑&quot;;
+font-size:14px;
+color: rgb(51, 51, 51);</string>
+       </property>
+       <property name="text">
+        <string>使用：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="currentAmtStoreLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family:&quot;微软雅黑&quot;;
+font-size:14px;
+color: rgb(51, 51, 51);</string>
+       </property>
+       <property name="text">
+        <string>余额：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="currentAmtStoreEdit">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>80</y>
+         <width>168</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>168</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family:&quot;微软雅黑&quot;;
+font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="alipayWidget">
+      <widget class="QWidget" name="widget_7" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>129</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>129</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#widget_7 {
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QPushButton" name="statementAlipayButton">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>73</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementAlipayButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementAlipayButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtAlipayLabel">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>21</y>
+          <width>72</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtAlipayLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+	font-family:&quot;微软雅黑&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>实收金额：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="factAmtAlipayEdit">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>21</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="wechartPayWidget">
+      <widget class="QWidget" name="widget_9" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>129</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>129</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#widget_9 {
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QPushButton" name="statementWeButton">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>73</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>245</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementWeButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementWeButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtWeLabel">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>21</y>
+          <width>72</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtWeLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+	font-family:&quot;微软雅黑&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>实收金额：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="factAmtWeEdit">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>21</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>168</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="applePayWidget">
+      <widget class="QWidget" name="widget_10" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>129</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>129</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#widget_10 {
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QPushButton" name="statementAppleButton">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>73</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementAppleButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementAppleButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtAppleLabel">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>21</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtAppleLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>实收金额：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="factAmtAppleEdit">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>21</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color:rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="jdWalletWidget">
+      <widget class="QWidget" name="widget_11" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>129</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>129</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#widget_11 {
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QPushButton" name="statementJdButton">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>73</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementJdButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementJdButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtJdLabel">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>21</y>
+          <width>72</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtJdLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>实收金额：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="factAmtJdEdit">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>21</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="CouponWidget">
+      <widget class="QWidget" name="widget_12" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>285</width>
+         <height>129</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#widget_12 {
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QPushButton" name="statementCouponButton">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>110</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementCouponButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementCouponButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtCouponLabel_1">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>21</y>
+          <width>72</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtCouponLabel_1 {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>券号：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="factAmtCouponEdit_1">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>21</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="factAmtCouponEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>95</x>
+          <y>60</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtCouponLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>72</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtCouponLabel_2 {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>优惠金额：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtCouponLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>95</y>
+          <width>161</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:red</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="unionPayWidget">
+      <property name="styleSheet">
+       <string notr="true">QWidget#widget_13 {
+	background-color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <widget class="QWidget" name="widget_13" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>285</width>
+         <height>129</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#widget_12 {
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QLineEdit" name="factAmtUnionEdit">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>21</y>
+          <width>168</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:14px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="statementUnionButton">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>73</y>
+          <width>245</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#statementUnionButton {
+	color: rgb(255, 255, 255);
+	font-size:16px;
+	border-image: url(:/shareImages/sure_normal.png);
+}
+
+QPushButton#statementUnionButton:pressed {
+	border-image: url(:/shareImages/sure_press.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>结算</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="factAmtUnionLabel">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>21</y>
+          <width>72</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#factAmtJdLabel {
+	font-size:14px;
+	color: rgb(51, 51, 51);
+}</string>
+        </property>
+        <property name="text">
+         <string>实收金额：</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="VirtualPayWidget" name="virtualPayWidget"/>
+     <widget class="VirtualPaysWidget" name="virtualPaysPage"/>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>259</y>
+       <width>285</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>285</width>
+       <height>2</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">Line#line_3 {
+	border: 1px solid #ededed;
+}</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>314</x>
+      <y>0</y>
+      <width>413</width>
+      <height>504</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>413</width>
+      <height>504</height>
+     </size>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>15</number>
+     </property>
+     <property name="topMargin">
+      <number>12</number>
+     </property>
+     <property name="rightMargin">
+      <number>15</number>
+     </property>
+     <property name="bottomMargin">
+      <number>190</number>
+     </property>
+     <property name="spacing">
+      <number>7</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="factorButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#factorButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#factorButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>实际</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="fiftyButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#fiftyButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#fiftyButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>￥50</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="hundredButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#hundredButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#hundredButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>￥100</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="twoHundredButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#twoHundredButton{
+	font:20px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(255,255,255);
+	border-image: url(:/digitalKeyboardImage/foreign_key_normal.png);
+}
+
+QPushButton#twoHundredButton:pressed{
+	border-image: url(:/digitalKeyboardImage/foreign_key_press.png);
+}</string>
+       </property>
+       <property name="text">
+        <string>￥200</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="4">
+      <widget class="WndDigitalKeyboard" name="DigitalKeyWnd" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>303</width>
+         <height>303</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>314</x>
+      <y>0</y>
+      <width>2</width>
+      <height>504</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>2</width>
+      <height>504</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>2</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(102, 102, 102);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="TitleBarWidget" name="titleWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>728</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>728</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WndDigitalKeyboard</class>
+   <extends>QWidget</extends>
+   <header location="global">WndDigitalKeyboard.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TitleBarWidget</class>
+   <extends>QWidget</extends>
+   <header>TitleBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StatementMethodButton</class>
+   <extends>QPushButton</extends>
+   <header>StatementMethodButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VirtualPayWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">VirtualPayWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VirtualPaysWidget</class>
+   <extends>QWidget</extends>
+   <header>VirtualPaysWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

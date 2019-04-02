@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KPos</class>
+ <widget class="QMainWindow" name="KPos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>KPos</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>10</number>
+      </property>
+      <widget class="HomePageWidget" name="HomePage">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+      <widget class="OutStockWid" name="outStockPage"/>
+      <widget class="InStockWid" name="inStockPage"/>
+      <widget class="SaleWidget" name="SalePage"/>
+      <widget class="SaleDetialWidget" name="saleDetialPage"/>
+      <widget class="ReportLossWid" name="reportLossPage"/>
+      <widget class="GoodsManageWidget" name="goodsManagePage"/>
+      <widget class="QWidget" name="ReportPage"/>
+      <widget class="SetWidget" name="SetPage">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+      <widget class="ReceiveOrdersWidget" name="receiveOrdersPage"/>
+      <widget class="StockWidget" name="stockPage"/>
+      <widget class="ReportChartsWidget" name="reportChartsPage"/>
+      <widget class="AdjustPriceWidget" name="adjustPricePage"/>
+      <widget class="BarCodeScaleWidget" name="barCodeScalePage"/>
+      <widget class="OrderAndCheckWidget" name="orderAndCheckPage"/>
+      <widget class="ResetKeyWgt" name="resetKeyPage"/>
+      <widget class="PasswdConfigWidget" name="accountManagePage"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>HomePageWidget</class>
+   <extends>QWidget</extends>
+   <header>HomePageWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SaleWidget</class>
+   <extends>QWidget</extends>
+   <header>SaleWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SetWidget</class>
+   <extends>QWidget</extends>
+   <header>SetWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReceiveOrdersWidget</class>
+   <extends>QWidget</extends>
+   <header>ReceiveOrdersWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReportChartsWidget</class>
+   <extends>QWidget</extends>
+   <header>ReportChartsWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AdjustPriceWidget</class>
+   <extends>QWidget</extends>
+   <header>AdjustPriceWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StockWidget</class>
+   <extends>QWidget</extends>
+   <header>StockWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OrderAndCheckWidget</class>
+   <extends>QWidget</extends>
+   <header>OrderAndCheckWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BarCodeScaleWidget</class>
+   <extends>QWidget</extends>
+   <header>BarCodeScaleWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OutStockWid</class>
+   <extends>QWidget</extends>
+   <header>../OutStock/OutStockWid.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>InStockWid</class>
+   <extends>QWidget</extends>
+   <header>../InStock/InStockWid.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ResetKeyWgt</class>
+   <extends>QWidget</extends>
+   <header>resetkeywgt.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PasswdConfigWidget</class>
+   <extends>QWidget</extends>
+   <header>passwdconfigwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SaleDetialWidget</class>
+   <extends>QWidget</extends>
+   <header>saledetialwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReportLossWid</class>
+   <extends>QWidget</extends>
+   <header>reportlosswid.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GoodsManageWidget</class>
+   <extends>QWidget</extends>
+   <header>goodsmanagewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

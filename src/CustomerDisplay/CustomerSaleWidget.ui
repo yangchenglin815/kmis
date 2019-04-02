@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomerSaleWidget</class>
+ <widget class="QWidget" name="CustomerSaleWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>292</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>292</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CustomerSaleWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#CustomerSaleWidget {
+	
+}
+background-color: rgb(250, 250, 250);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>292</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label {
+	font: 16px;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(51, 51, 51);
+}</string>
+     </property>
+     <property name="text">
+      <string>商品列表</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="GoodsSellListTitleWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>292</width>
+       <height>38</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="GoodsSellListView" name="listView">
+     <property name="minimumSize">
+      <size>
+       <width>292</width>
+       <height>443</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListView#listView {
+	border:none;
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>291</width>
+       <height>77</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>14</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>77</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label_2 {
+	font:14px;
+	font-family:&quot;微软雅黑&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>合计：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="totalValueLabel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>77</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#totalValueLabel {
+	font:30px;
+	font:bold;
+	font-family:&quot;微软雅黑&quot;;
+	color: rgb(251, 153, 110);
+}</string>
+        </property>
+        <property name="text">
+         <string>￥499990.00</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GoodsSellListTitleWidget</class>
+   <extends>QWidget</extends>
+   <header>GoodsSellListTitleWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GoodsSellListView</class>
+   <extends>QListView</extends>
+   <header location="global">GoodsSellListView.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

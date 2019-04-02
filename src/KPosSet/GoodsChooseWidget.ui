@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GoodsChooseWidget</class>
+ <widget class="QWidget" name="GoodsChooseWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>290</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/kPosSetImage/goodsChoose/confirmSave.png);
+color:#ffffff;
+font-family:&quot;微软雅黑&quot;;
+font-size:14px;
+}
+
+QPushButton:pressed{
+border-image: url(:/kPosSetImage/goodsChoose/confirmSavePress.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="goodsLabel">
+   <property name="geometry">
+    <rect>
+     <x>113</x>
+     <y>300</y>
+     <width>13</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#5181cd;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="selectAddLabel">
+   <property name="geometry">
+    <rect>
+     <x>173</x>
+     <y>300</y>
+     <width>13</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#d3865c;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="goodsContentLabel">
+   <property name="geometry">
+    <rect>
+     <x>133</x>
+     <y>300</y>
+     <width>24</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>商品</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="selectAddContentLabel">
+   <property name="geometry">
+    <rect>
+     <x>193</x>
+     <y>300</y>
+     <width>72</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择添加商品</string>
+   </property>
+  </widget>
+  <widget class="KPosUpArrowButton" name="upArrowButton" native="true">
+   <property name="geometry">
+    <rect>
+     <x>273</x>
+     <y>283</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="KPosDownArrowButton" name="downArrowButton" native="true">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>283</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_30" native="true">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>289</y>
+     <width>1</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #6c6c6c;</string>
+   </property>
+  </widget>
+  <widget class="GoodsChooseListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>450</width>
+     <height>283</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListView{
+	border:none;
+	background-color: rgb(81, 80, 80);
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KPosUpArrowButton</class>
+   <extends>QWidget</extends>
+   <header>KPosArrowButton.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>KPosDownArrowButton</class>
+   <extends>QWidget</extends>
+   <header>KPosArrowButton.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GoodsChooseListView</class>
+   <extends>QListView</extends>
+   <header>GoodsChooseListView.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

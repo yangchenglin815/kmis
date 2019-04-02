@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CheckOrderWidget</class>
+ <widget class="QWidget" name="CheckOrderWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="50,550">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="TitleWithReturnWidget" name="titleWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="mainWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#mainWidget{
+background-color: rgb(81, 80, 80);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>18</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>18</number>
+      </property>
+      <property name="bottomMargin">
+       <number>26</number>
+      </property>
+      <item>
+       <widget class="CheckOrderCategoryWidget" name="categoryWidget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>92</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>92</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CheckOrderCategoryDetailWidget" name="categoryDetailWidget" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TitleWithReturnWidget</class>
+   <extends>QWidget</extends>
+   <header>TitleWithReturnWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CheckOrderCategoryWidget</class>
+   <extends>QWidget</extends>
+   <header>CheckOrderCategoryWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CheckOrderCategoryDetailWidget</class>
+   <extends>QWidget</extends>
+   <header>CheckOrderCategoryDetailWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

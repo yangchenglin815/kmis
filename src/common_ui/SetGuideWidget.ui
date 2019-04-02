@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetGuideWidget</class>
+ <widget class="QWidget" name="SetGuideWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="SetHomeGuidePage" name="setHomeGuidePage"/>
+     <widget class="SetBaseGuideWidget" name="setBaseGuidePage"/>
+     <widget class="SetButtonGuideWidget" name="setButtonGuidePage"/>
+     <widget class="SetGoodsGuideWidget" name="setGoodsGuidePage"/>
+     <widget class="SetDeviceGuideWidget" name="setDeviceGuidePage"/>
+     <widget class="SetPaymentGuideWidget" name="setPaymentGuidePage"/>
+     <widget class="SetParamGuideWidget" name="setParamGuidePage"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SetHomeGuidePage</class>
+   <extends>QWidget</extends>
+   <header>sethomeguidepage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SetBaseGuideWidget</class>
+   <extends>QWidget</extends>
+   <header>setbaseguidewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SetButtonGuideWidget</class>
+   <extends>QWidget</extends>
+   <header>setbuttonguidewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SetGoodsGuideWidget</class>
+   <extends>QWidget</extends>
+   <header>setgoodsguidewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SetDeviceGuideWidget</class>
+   <extends>QWidget</extends>
+   <header>setdeviceguidewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SetPaymentGuideWidget</class>
+   <extends>QWidget</extends>
+   <header>setpaymentguidewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SetParamGuideWidget</class>
+   <extends>QWidget</extends>
+   <header>setparamguidewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

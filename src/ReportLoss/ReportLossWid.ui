@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportLossWid</class>
+ <widget class="QWidget" name="ReportLossWid">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>40</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="52,548">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="TitleWithReturnWidget" name="titleWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>52</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>80</width>
+       <height>5</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>800</width>
+       <height>52</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="mainWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#mainWidget{
+background-color: rgb(81, 80, 80);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <widget class="ReportLossWidget" name="mainPage"/>
+        <widget class="AddReportLossWidget" name="editPage"/>
+        <widget class="CheckDetialWidget" name="inquirePage"/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TitleWithReturnWidget</class>
+   <extends>QWidget</extends>
+   <header>TitleWithReturnWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReportLossWidget</class>
+   <extends>QWidget</extends>
+   <header>reportlosswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CheckDetialWidget</class>
+   <extends>QWidget</extends>
+   <header>checkdetialwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AddReportLossWidget</class>
+   <extends>QWidget</extends>
+   <header>addreportlosswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

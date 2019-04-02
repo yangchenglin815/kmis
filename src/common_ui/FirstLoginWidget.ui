@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FirstLoginWidget</class>
+ <widget class="QDialog" name="FirstLoginWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>FirstLoginWidget</string>
+  </property>
+  <widget class="Line" name="splitLine">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>0</y>
+     <width>2</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>2</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="WndDigitalKeyboard" name="keyboardWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>418</x>
+     <y>135</y>
+     <width>302</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>302</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>302</width>
+     <height>300</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closedButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/shareImages/close.png);
+}
+
+QPushButton:pressed{
+border-image: url(:/shareImages/close_press.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>87</x>
+     <y>135</y>
+     <width>296</width>
+     <height>302</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>294</width>
+     <height>301</height>
+    </size>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="registPage">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="FirstLginInfoWidget" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>296</width>
+         <height>302</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>296</width>
+         <height>302</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="firstLoginLabel">
+          <property name="minimumSize">
+           <size>
+            <width>294</width>
+            <height>55</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>55</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#ea8852;
+background-color: #ffffff;
+border-bottom: 1px solid #ededed;
+</string>
+          </property>
+          <property name="text">
+           <string>    首次登录信息确认</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="loginInfoWidget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>296</width>
+            <height>247</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="leftMargin">
+            <number>18</number>
+           </property>
+           <property name="topMargin">
+            <number>40</number>
+           </property>
+           <property name="rightMargin">
+            <number>18</number>
+           </property>
+           <property name="bottomMargin">
+            <number>40</number>
+           </property>
+           <property name="horizontalSpacing">
+            <number>0</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>12</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLabel" name="corpIDLabel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-size:14px;</string>
+                 </property>
+                 <property name="text">
+                  <string>企业编号：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="corpIDEdit">
+                 <property name="minimumSize">
+                  <size>
+                   <width>180</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">/*border-image: url(:/shareImages/editRect.png);
+font-size:12px;
+color: rgb(102, 102, 102);
+padding-left:10px;*/
+</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>请在此输入您的企业编号</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="shopIDLabel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-size:14px;</string>
+                 </property>
+                 <property name="text">
+                  <string>门店编号：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="shopIDEdit">
+                 <property name="minimumSize">
+                  <size>
+                   <width>180</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-image: url(:/shareImages/editRect.png);
+font-size:12px;
+color: rgb(102, 102, 102);
+padding-left:10px;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>请在此输入您的门店编号</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QLabel" name="hintLabel">
+                 <property name="styleSheet">
+                  <string notr="true">color:#ea8852;</string>
+                 </property>
+                 <property name="text">
+                  <string>组织编号或门店编号错误！</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="uploadButton">
+             <property name="minimumSize">
+              <size>
+               <width>260</width>
+               <height>45</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color:#ffffff;
+font-size:16px;
+border-image: url(:/loginImage/commonButton.png);
+}
+
+QPushButton:pressed{
+border-image: url(:/loginImage/commonButtonPressed.png);
+}</string>
+             </property>
+             <property name="text">
+              <string>上传申请</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="waitPage">
+    <property name="styleSheet">
+     <string notr="true">background-color:#ffffff;</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="topWidget" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#topWidget{
+	border-bottom: 1px solid #ededed;
+}
+</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>15</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="corpNameLabel">
+          <property name="styleSheet">
+           <string notr="true">font-size:12px;
+font-family:&quot;微软雅黑&quot;;
+color:#999999;</string>
+          </property>
+          <property name="text">
+           <string>企业名称：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="shopNameLabel">
+          <property name="styleSheet">
+           <string notr="true">font-size:12px;
+font-family:&quot;微软雅黑&quot;;
+color:#999999;</string>
+          </property>
+          <property name="text">
+           <string>门店名称：</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>160</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:12px;
+font-family:&quot;微软雅黑&quot;;
+color:#999999;</string>
+        </property>
+        <property name="text">
+         <string>请耐心等待管理员审核</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>130</y>
+          <width>80</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:16px;
+font-family:&quot;微软雅黑&quot;;
+color:#333333;</string>
+        </property>
+        <property name="text">
+         <string>已上传成功</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>46</y>
+          <width>60</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/shareImages/upload_success.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>200</y>
+          <width>41</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:12px;
+font-family:&quot;微软雅黑&quot;;
+color:#999999;</string>
+        </property>
+        <property name="text">
+         <string>已等待</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="waitTimeLabel">
+        <property name="geometry">
+         <rect>
+          <x>145</x>
+          <y>200</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:12px;
+font-family:&quot;微软雅黑&quot;;
+color:#ea8852;</string>
+        </property>
+        <property name="text">
+         <string>10s</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WndDigitalKeyboard</class>
+   <extends>QWidget</extends>
+   <header location="global">WndDigitalKeyboard.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

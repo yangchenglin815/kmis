@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetWidget</class>
+ <widget class="QWidget" name="SetWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SetWidget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="50,550">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="titleBarWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#titleBarWidget {
+	border-image: url(:/shareImages/dlg_titlebar.png);
+}
+</string>
+     </property>
+     <widget class="QLabel" name="logoLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>15</y>
+        <width>64</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/saleImage/logo_sale.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButton">
+      <property name="geometry">
+       <rect>
+        <x>722</x>
+        <y>5</y>
+        <width>65</width>
+        <height>39</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backButton {
+	border-image: url(:/shareImages/btn_back_normal.png);
+}
+
+QPushButton#backButton:press {
+	border-image: url(:/shareImages/btn_back_press.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="mainSkinWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#mainSkinWidget{
+	background-color: rgb(81, 80, 80);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="153,607">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>16</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>7</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="posInfoSetButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>47</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>86</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+font-size:15px; 
+color: #ffffff;
+border-image: url(:/setImage/tab_button_normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>基础信息</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="keySetButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>47</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>86</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+font-size:15px; 
+color: #ffffff;
+border-image: url(:/setImage/tab_button_normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>按键设置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="goodsSetButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>47</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>86</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+font-size:15px; 
+color: #ffffff;
+border-image: url(:/setImage/tab_button_normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>商品设置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="deviceSetButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>47</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>86</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+font-size:15px; 
+color: #ffffff;
+border-image: url(:/setImage/tab_button_normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>设备设置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="screenSetButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>47</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>86</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+font-size:15px; 
+color: #ffffff;
+border-image: url(:/setImage/tab_button_normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>外显广告</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="payWaySetButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>47</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>86</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+font-size:15px; 
+color: #ffffff;
+border-image: url(:/setImage/tab_button_normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>支付设置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="paramsSetButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>148</width>
+             <height>47</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>86</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+font-size:15px; 
+color: #ffffff;
+border-image: url(:/setImage/tab_button_normal.png);
+}</string>
+           </property>
+           <property name="text">
+            <string>参数设置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>199</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="minimumSize">
+         <size>
+          <width>607</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1677</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="PosInfoSetPage" name="posInfoSetPage">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+        <widget class="KeySetPage" name="keySetPage">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+        <widget class="GoodsSetPage" name="goodSetPage">
+         <property name="styleSheet">
+          <string notr="true">QWidget#goodSetPage{
+	background-color:#ffffff;
+}</string>
+         </property>
+        </widget>
+        <widget class="ScreenSetPage" name="screenSetPage">
+         <property name="styleSheet">
+          <string notr="true">QWidget#screenSetPage{
+	background-color:#ffffff;
+}</string>
+         </property>
+        </widget>
+        <widget class="PayWaySetPage" name="payWaySetPage">
+         <property name="styleSheet">
+          <string notr="true">QWidget#payWaySetPage{
+	background-color:#ffffff;
+}</string>
+         </property>
+        </widget>
+        <widget class="ParamsSetPage" name="paramsSetPage"/>
+        <widget class="DeviceSetPage" name="deviceSetPage"/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>PosInfoSetPage</class>
+   <extends>QWidget</extends>
+   <header>PosInfoSetPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>KeySetPage</class>
+   <extends>QWidget</extends>
+   <header>KeySetPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GoodsSetPage</class>
+   <extends>QWidget</extends>
+   <header>GoodsSetPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ScreenSetPage</class>
+   <extends>QWidget</extends>
+   <header>ScreenSetPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PayWaySetPage</class>
+   <extends>QWidget</extends>
+   <header>PayWaySetPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ParamsSetPage</class>
+   <extends>QWidget</extends>
+   <header>ParamsSetPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DeviceSetPage</class>
+   <extends>QWidget</extends>
+   <header location="global">DeviceSetPage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
